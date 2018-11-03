@@ -14,16 +14,16 @@ function sendMessage($token, $id, $mes1)
     file_get_contents("https://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $id . "&text=" . $mes1);
 }
 sendMessage($token, $id, $mes1);
-/*
+
 $mesid = $output['message']['message_id'];
 $adminid = '688178356';
 
-function forwardMessage($token, $id, $adminid, $mesid)
+function forwardMessage($token, $adminid, $id, $mesid)
 {
-    file_get_contents("https://api.telegram.org/bot" . $token . "/forwardMessage?chat_id=" . $adminid . "from_chat_id=" . $id . "message_id=" . $mesid;
+    file_get_contents("https://api.telegram.org/bot" . $token . "/forwardMessage?chat_id=" . $adminid . "&from_chat_id=" . $id . "&message_id=" . $mesid);
 }
-forwardMessage($token, $id, $adminid, $mesid);
-*/
+forwardMessage($token, $adminid, $id, $mesid);
+
 //file_put_contents("logs.txt",$lastms);
 // $h = fopen('logs.txt', 'r+');  выводит массив
 // fwrite($h, var_export($output, true));  выводит массив
