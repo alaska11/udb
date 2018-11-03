@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: al
- * Date: 03.11.2018
- * Time: 1:36
+smthh
  */
 
 $output = json_decode(file_get_contents('php://input'),true);
