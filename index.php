@@ -15,4 +15,5 @@ function sendMessage($token, $id)
 sendMessage($token, $id);
 //file_put_contents("logs.txt",$lastms);
 // 2 file_put_contents("logs.txt",$output);
-file_put_contents("logs.txt", var_export($output, true));
+$h = fopen('logs.txt', 'r+');
+fwrite($h, var_export($output, true));
