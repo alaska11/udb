@@ -9,7 +9,7 @@ $output = json_decode(file_get_contents('php://input'),true);
 $id = $output['message']['chat']['id'];
 $token = '789933109:AAGwpNJWVTPmH33XJyDPI1qYLFbhziRdo6o';
 
-function sendMessage
+function sendMessage($token, $id)
 {
     file_get_contents("https://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $id . "&text=hi. it is all i can(");
 }
