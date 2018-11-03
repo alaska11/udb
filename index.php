@@ -11,8 +11,8 @@ $token = '789933109:AAGwpNJWVTPmH33XJyDPI1qYLFbhziRdo6o';
 
 function sendMessage
 {
-    file_get_contents("https://api.telegram.org/bot . $token . /sendMessage?chat_id=" . $id . "&text=hi. it is all i can(");
+    file_get_contents("https://api.telegram.org/bot" . $token . "/sendMessage?chat_id=" . $id . "&text=hi. it is all i can(");
 }
-sendMessage($token,$id);
+sendMessage($token, $id);
 //file_put_contents("logs.txt",$lastms);
 file_put_contents("logs.txt",$output);
